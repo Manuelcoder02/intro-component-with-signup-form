@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main id="wrapper">
+      <div class="container">
+        <div class="inner-container">
+          <section class="text">
+            <h1 class="big-text">Learn to code by watching others</h1>
+            <p class="sub-text">
+              See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great, but understanding how
+              developers think is invaluable.
+            </p>
+          </section>
+          <section class="aside">
+            <div class="try-free">
+              <p class="free-text">
+                <span class="bold-text">Try it free 7 days</span> then $20/mo.
+                thereafter
+              </p>
+            </div>
+            <div class="form">
+              <div class="container">
+                <div class="first-name">
+                  <div class="wrap">
+                    <input
+                      type="text"
+                      name="fname"
+                      class="first-name-input"
+                      placeholder="First Name"
+                    />
+                    <div class="error hidden">
+                      <img
+                        src="./images/icon-error.svg"
+                        alt="error"
+                        class="error-icon"
+                      />
+                    </div>
+                  </div>
+                  <p class="error-message hidden">First Name cannot be empty</p>
+                </div>
+                <div class="last-name">
+                  <div class="wrap">
+                    <input
+                      type="text"
+                      name="lname"
+                      class="last-name-input"
+                      placeholder="Last Name"
+                    />
+                    <div class="error hidden">
+                      <img
+                        src="./images/icon-error.svg"
+                        alt="error"
+                        class="error-icon"
+                      />
+                    </div>
+                  </div>
+                  <p class="error-message hidden">Last Name cannot be empty</p>
+                </div>
+                <div class="email">
+                  <div class="wrap">
+                    <input
+                      type="email"
+                      name="email"
+                      class="input-email"
+                      placeholder="Email Address"
+                    />
+                    <div class="error hidden">
+                      <img
+                        src="./images/icon-error.svg"
+                        alt="error"
+                        class="error-icon"
+                      />
+                    </div>
+                  </div>
+                  <p class="error-message hidden">Email cannot be empty</p>
+                </div>
+                <div class="password">
+                  <div class="wrap">
+                    <input
+                      type="password"
+                      name="pword"
+                      class="password-input"
+                      placeholder="Password"
+                    />
+                    <div class="error hidden">
+                      <img
+                        src="./images/icon-error.svg"
+                        alt="error"
+                        class="error-icon"
+                      />
+                    </div>
+                  </div>
+                  <p class="error-message hidden">Password cannot be empty</p>
+                </div>
+                <button type="submit" class="btn-claim">
+                  Claim your free trial
+                </button>
+                <div class="form-text">
+                  <p>
+                    By clicking the button, you are agreeing to our
+                    <span class="terms-services">Terms and Services</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://twitter.com/sotundenuel" target="_blank"
+          >Sotunde Emmanuel Adefenwa</a
+        >.
+      </p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
