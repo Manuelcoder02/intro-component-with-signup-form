@@ -19,13 +19,12 @@ const [errorMessageA, errorMessageB, errorMessageC, errorMessageD] =
 
 console.log(errorA, errorMessageB, errorMessageC);
 // console.log(errorIcon, errorMessage);
-
+const firstName = firstNameInput.value;
+const lastName = lastNameInput.value;
+const email = emailInput.value;
+const password = passwordInput.value;
+console.log(firstName);
 btnClaim.addEventListener("click", function () {
-  const firstName = firstNameInput.value;
-  const lastName = lastNameInput.value;
-  const email = emailInput.value;
-  const password = passwordInput.value;
-
   const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}/; // Regular expression for email
 
   if (!firstName) {
@@ -36,6 +35,7 @@ btnClaim.addEventListener("click", function () {
     errorA.classList.add("hidden");
     errorMessageA.classList.add("hidden");
     firstNameInput.classList.remove("border-error");
+    firstName;
   }
   if (!lastName) {
     errorB.classList.remove("hidden");
@@ -71,5 +71,6 @@ btnClaim.addEventListener("click", function () {
     errorD.classList.add("hidden");
     errorMessageD.classList.add("hidden");
     passwordInput.classList.remove("border-error");
+    password = " ";
   }
 });
