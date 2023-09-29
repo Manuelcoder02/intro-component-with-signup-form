@@ -21,12 +21,17 @@ console.log(errorA, errorMessageB, errorMessageC);
 // console.log(errorIcon, errorMessage);
 
 btnClaim.addEventListener("click", function () {
-  const firstName = firstNameInput.value;
-  const lastName = lastNameInput.value;
+  let firstName = firstNameInput.value;
+  let lastName = lastNameInput.value;
   const email = emailInput.value;
-  const password = passwordInput.value;
+  let password = passwordInput.value;
   const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}/; // Regular expression for email
-
+  const trimmed = firstName.replace(/\s/g, "");
+  const trimmedLastName = lastName.replace(/\s/g, "");
+  const trimmedPassword = password.replace(/\s/g, "");
+  firstName = trimmed;
+  lastName = trimmedLastName;
+  password = trimmedPassword;
   if (!firstName) {
     errorA.classList.remove("hidden");
     errorMessageA.classList.remove("hidden");
